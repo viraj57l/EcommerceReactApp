@@ -4,7 +4,7 @@ import axios from 'axios'
 import './login.css'
 import { useNavigate } from 'react-router-dom';
 
-const navigate = useNavigate();
+
 
 const Login = () => {
   const [user,setUser] = useState({
@@ -12,6 +12,7 @@ const Login = () => {
     password:''
   })
 
+  const navigate = useNavigate();
   const onChangeInput = e =>{
     const {name,value}=e.target;
     setUser({...user,[name]:value})

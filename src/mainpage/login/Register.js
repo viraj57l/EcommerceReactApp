@@ -5,7 +5,7 @@ import './login.css'
 import { useNavigate } from 'react-router-dom';
 
 
-const navigate = useNavigate();
+
 
 const Register = () => {
 
@@ -15,6 +15,7 @@ const Register = () => {
     email:'',
     password:''
   })
+  const navigate = useNavigate();
 
   const onChangeInput = e =>{
     const {name,value}=e.target;
