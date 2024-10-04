@@ -2,6 +2,9 @@ import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import axios from 'axios'
 import './login.css'
+import { useNavigate } from 'react-router-dom';
+
+const navigate = useNavigate();
 
 const Login = () => {
   const [user,setUser] = useState({
@@ -18,11 +21,12 @@ const Login = () => {
     e.preventDefault()
     try{
       await axios.post('https://ecommerce-api-nine-woad.vercel.app/user/login',{...user})
-      localStorage.setItem('firstLogin',true)
+      localStorage.setItem('firstLogin',JSON.stringify(true))
 
-      window.location.href="/"
+      navigate('/');
     }catch(err){
-      alert(err.response.data.msg)
+      const message = err.response?.data?.msg || "An error occurred";
+      alert(message);
     }
   }
 

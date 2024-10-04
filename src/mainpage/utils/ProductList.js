@@ -18,7 +18,6 @@ const ProductList = ({product,isAdmin}) => {
       <div className='product_box'>
         <h2 title={product.title}>{product.title}</h2>
         <span>${product.price}</span>
-
         <p className={`product_description ${showMore ? 'expanded' : ''}`}>
             {product.description}
         </p>
