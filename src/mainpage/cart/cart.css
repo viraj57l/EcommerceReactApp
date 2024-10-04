@@ -1,0 +1,116 @@
+/* Main Cart Container */
+.cart-container {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Empty Cart Message */
+  .cart-empty {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #333;
+    margin-top: 20px;
+  }
+  
+  /* Individual Cart Item */
+  .detail {
+    display: flex;
+    align-items: flex-start; /* Align items to the top */
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  }
+  
+  .detail:hover {
+    box-shadow: 0px 4px 12px rgba(251, 91, 91, 0.15);
+  }
+  
+  /* Product Image */
+  .cart-item img {
+    width: 200px;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+  }
+  
+  .cart-item {
+    border: 0.1px solid #333;
+    border-radius: 20px;
+    margin: 5px;
+    display: flex;
+  }
+  
+  /* Product Details */
+  .box-detail {
+    flex-grow: 1;
+    margin-left: 30px; /* Adjust gap between image and details */
+    font-size: 1.2rem;
+    color: #555;
+  }
+  
+  .box-detail h2 {
+    font-size: 1.8rem;
+    color: #333;
+  }
+  
+  .box-detail h6 {
+    font-size: 1rem;
+    color: #999;
+    margin-bottom: 10px;
+  }
+  
+  .box-detail p {
+    margin: 5px 0;
+  }
+  
+  /* Price and Buy Now Button */
+  .box-detail span {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #007600;
+  }
+  
+  .box-detail a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #ff9900;
+    color: white;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .box-detail a:hover {
+    background-color: #cc7a00;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .detail {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .box-detail {
+      margin-left: 0;
+      margin-top: 15px;
+    }
+  
+    .detail img {
+      width: 100%;
+      max-width: 300px;
+    }
+  }
+  

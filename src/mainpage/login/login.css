@@ -1,0 +1,81 @@
+
+.login-page, .register-page {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .login-page form, .register-page form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+
+  input[type="email"], 
+  input[type="password"], 
+  input[type="name"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-sizing: border-box;
+    background-color: #fff;
+    transition: border 0.3s ease;
+  }
+  
+  input[type="email"]:focus, 
+  input[type="password"]:focus, 
+  input[type="name"]:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  button[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+    margin-bottom: 4px;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+  
+
+  .row {
+    margin-top: 15px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .row a {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+  }
+  
+  .row a:hover {
+    color: #0056b3;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .login-page, .register-page {
+      width: 90%;
+      margin: 20px auto;
+      padding: 15px;
+    }
+  }
+  
