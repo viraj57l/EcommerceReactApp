@@ -10,7 +10,7 @@ export const DataProvider=({children})=>{
 
     const refreshToken =async() =>{
         try {
-            const res = await axios.post('https://ecommerce-api-nine-woad.vercel.app/user/refresh_token',null, { withCredentials: true });
+            const res = await axios.post('https://ecommerce-api-nine-woad.vercel.app/user/refresh_token',{}, { withCredentials: true });
             setToken(res.data.accesstoken);
         } catch (err) {
             console.error('Failed to refresh token:', err);
