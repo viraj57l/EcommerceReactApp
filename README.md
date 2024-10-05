@@ -1,6 +1,6 @@
 #NOTE :
 
-# Few functionalties might be not working on production due to cookies may not have been workign properly in production ,but the project runs smoothly locally (My apologies).
+# Few functionalties might be not working on production due to cookies may not have been working properly in production ,but the project runs smoothly locally (My apologies).
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
