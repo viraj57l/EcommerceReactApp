@@ -38,7 +38,7 @@ const UserAPI = (token) => {
    })
 
    if(check){
-    setCart([...cart,{...product,quantity:1}])
+    setCart([...cart,{...product,quantity:+1}])
    }else{
     alert("This product has been already added to cart")
    }

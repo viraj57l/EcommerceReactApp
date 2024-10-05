@@ -26,8 +26,7 @@ const DetailProduct = () => {
       <img src={detailProduct.images.url} alt={detailProduct.title}/>
       <div className='box-detail'>
         <div className='row'>
-            <h2>{detailProduct.title}</h2>
-            <h6>{detailProduct.product_id}</h6>
+            <h2>{detailProduct.title}</h2>           
         </div>
         <span> ${detailProduct.price}</span>
         <p>{detailProduct.description}</p>
